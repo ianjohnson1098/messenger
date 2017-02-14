@@ -14,7 +14,7 @@ public class Main extends JavaPlugin {
 	
 	@SuppressWarnings("deprecation")
 	public boolean onCommand(CommandSender sender, Command command, String label, String args[]) {
-		if (label.equalsIgnoreCase("message")) {
+		if (label.equalsIgnoreCase("message") || label.equalsIgnoreCase("msg") || label.equalsIgnoreCase("m") || label.equalsIgnoreCase("tell") || label.equalsIgnoreCase("t") || label.equalsIgnoreCase("whisper") || label.equalsIgnoreCase("w") || label.equalsIgnoreCase("pm")) {
 			if (!(sender instanceof Player)) {
 				sender.sendMessage("§cOnly players can send messages...");
 				return true;
@@ -38,7 +38,7 @@ public class Main extends JavaPlugin {
 			receiver.sendMessage("§6From " + player.getName() + " §8>&f" + message);
 			player.sendMessage("§6To " + receiver.getName() + " §8>&f" + message);
 			return true;
-		} else if (label.equalsIgnoreCase("reply")) {
+		} else if (label.equalsIgnoreCase("reply") || label.equalsIgnoreCase("r")) {
 			if (!(sender instanceof Player)) {
 				sender.sendMessage("§cOnly players can send messages");
 				return true;
