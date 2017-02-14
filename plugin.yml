@@ -1,0 +1,12 @@
+name: Messenger
+main: me.ian.messenger
+author: Ian
+version: 1.0
+description: A simple messenger plugin.
+commands:
+    message:
+        description: Send a private message to another player on the server.
+        aliases: [msg, m, tell, t, whisper, w, pm]
+    reply:
+    	description: Sends a reply to the last person to message you.
+    	aliases: [r]
