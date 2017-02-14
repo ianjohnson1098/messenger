@@ -33,7 +33,7 @@ public class Main extends JavaPlugin {
 			conversations.remove(receiver.getName());
 			conversations.put(receiver.getName(), player.getName());
 			String message = "";
-			for (int i = 1; i <= args.length; i++)
+			for (int i = 1; i < args.length; i++)
 				message += " " + args[i];
 			receiver.sendMessage("§6From " + player.getName() + " §8>&f" + message);
 			player.sendMessage("§6To " + receiver.getName() + " §8>&f" + message);
@@ -61,7 +61,7 @@ public class Main extends JavaPlugin {
 			conversations.remove(receiver.getName());
 			conversations.put(receiver.getName(), player.getName());
 			String message = "";
-			for (int i = 0; i <= args.length; i++)
+			for (int i = 0; i < args.length; i++)
 				message += " " + args[i];
 			receiver.sendMessage("§6From " + player.getName() + " §8>&f" + message);
 			player.sendMessage("§6To " + receiver.getName() + " §8>&f" + message);
